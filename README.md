@@ -22,27 +22,6 @@ Deployment: Vercel
 
 ---
 
-🔥 Getting Started
-
-⿡ Clone the Repository
-
-git clone <your-repository-url>
-cd PreciseBake-frontend
-
-⿢ Install Dependencies
-
-Install the required dependencies (if any):
-
-npm install
-
-⿣ Run the Project Locally
-
-npm start
-
-The frontend will be live at http://localhost:3000/.
-
----
-
 ⚙ Folder Structure
 
 /public           # Static assets (images, icons, etc.)
@@ -58,7 +37,7 @@ The frontend will be live at http://localhost:3000/.
 
 🌟 How It Works
 
-1. Input: Users can select ingredients from a dropdown or use speech-to-text input.
+1. Input: Users can manually input their recipes or use speech-to-text input.
 
 
 2. Conversion: The website uses real-time algorithms with a density database to accurately convert cups, tablespoons, etc., into grams.
