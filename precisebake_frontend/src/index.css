@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #3498db;
+    --secondary: #2ecc71;
+    --accent: #e74c3c;
+    --background: #f8f9fa;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl;
+  }
+
+  .card-icon {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-full mb-4 transition-transform duration-300 hover:scale-110 cursor-pointer;
+  }
+
+  .input-error {
+    @apply text-red-500 text-sm mt-2 opacity-0 transition-opacity duration-300;
+  }
+
+  .input-error.visible {
+    @apply opacity-100;
+  }
+
+  .button-hover {
+    @apply transform transition-all duration-300 hover:scale-105 active:scale-95;
+  }
+}
+
+.flip-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.flip-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200;
+  border-top-color: var(--primary);
+}
